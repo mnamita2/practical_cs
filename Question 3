@@ -1,0 +1,90 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNRUTP5basiR7AXJhFoH2YA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mnamita2/practical_cs/blob/main/Question%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def main():\n",
+        "    ch=int(input('Enter 1-length , 2=max of 3 strings,3=to print , 4=number of words='))\n",
+        "    if ch==1:\n",
+        "        n=input('Enter a string:')\n",
+        "        l=len(n)\n",
+        "        print('The length of the string is=',l)\n",
+        "    elif ch==2:\n",
+        "        n1=input('Enter string 1=')\n",
+        "        n2=input('Enter string 2=')\n",
+        "        n3=input('Enter string 3=')\n",
+        "        print('The maximum of the 3 strings is=',max(n1,n2,n3))\n",
+        "    elif ch==3:\n",
+        "        a=input('Enter a string:')\n",
+        "        s=''\n",
+        "        a=list(a)\n",
+        "        for i in range(len(a)):\n",
+        "            if (i%2!=0):\n",
+        "                if a[i]==' ':\n",
+        "                    a[i]=' '\n",
+        "                else:\n",
+        "                    a[i]='#'\n",
+        "        for e in a:\n",
+        "            s=s+e\n",
+        "        print('the new string=',s)    \n",
+        "    elif ch==4:\n",
+        "         b=input('Enter a string=')\n",
+        "         c=0\n",
+        "         for ch in b:\n",
+        "            if ch==' ':\n",
+        "                c+=1\n",
+        "         a=c+1\n",
+        "         print('The number of words:',a)\n",
+        "    else:\n",
+        "        print('invalid choice')\n",
+        "if __name__=='__main__':\n",
+        "      main()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NcK55FeVEYQh",
+        "outputId": "251e7fed-6aa6-4547-ba69-a9e96b0437dc"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter 1-length , 2=max of 3 strings,3=to print , 4=number of words=6\n",
+            "invalid choice\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
